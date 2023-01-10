@@ -4,44 +4,44 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
+		<project.artifactId>spring-boot-starter-parent</project.artifactId>
 		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.medilab</groupId>
-	<artifactId>medilab-morning-preclinic</artifactId>
+	<project.artifactId>medilab-morning-preclinic</project.artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>medilab-morning-preclinic-war</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11.0</java.version>
+		<java.version>11.0.</java.version>
 		<build.number></build.number>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<project.artifactId>spring-boot-starter-web</project.artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<project.artifactId>spring-boot-starter-tomcat</project.artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
+			<project.artifactId>spring-boot-starter-test</project.artifactId>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
+			<project.artifactId>tomcat-embed-jasper</project.artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
+			<project.artifactId>lombok</project.artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -49,26 +49,26 @@
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
+			<project.artifactId>h2</project.artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
+			<project.artifactId>jstl</project.artifactId>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<project.artifactId>mysql-connector-java</project.artifactId>
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
 	<build>
-	   <finalName>${artifactId}</finalName>
+	   <finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<project.artifactId>spring-boot-maven-plugin</project.artifactId>
 			</plugin>
 		</plugins>
 	</build>
